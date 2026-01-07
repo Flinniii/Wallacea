@@ -1,0 +1,43 @@
+/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words (also in the mega-menu). This resolves it */
+.wp-block-navigation-item__content { width: max-content; }
+
+/* If the inline image is added to the nav item, this makes it gapped from the text */
+.wp-block-navigation li a.wp-block-navigation-item__content {
+    align-items: center;
+    gap: .3em;
+}
+
+/* Submenu icon ˘ make sure it's centered */
+.wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
+
+/* Mobile menu modal overlay - make the submenu on vertical ends tighten */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Mobile menu modal overlay - give some spacing */
+.has-modal-open .wp-block-navigation__responsive-container {padding: 18px 5px;}
+.has-modal-open .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {line-height: 2.3;}
+
+/* On buttons's hover in the nav set a shadow */
+nav .wp-block-search__button.wp-element-button:hover,
+nav .wp-block-button__link:hover {
+    box-shadow: var(--wp--custom--button-shadow-small);
+    transition: all .2s ease-in-out;
+}
+
+/* Buttons in the nav (search, +) */
+nav .wp-block-buttons > .wp-block-button .wp-element-button {
+    padding: .35em 1em;
+}
+nav .wp-block-search__button {
+    padding: .35em 1em;
+    margin: auto;
+    font-size: 1rem;
+}
+nav .wp-block-search__button svg {
+    margin: 7px -2px;
+    min-height: unset;
+    min-width: unset;
+}

@@ -1,0 +1,40 @@
+/* On hover, push the sub-menu's item a bit from the left */
+.wp-block-navigation li.wp-block-navigation-item ul a:hover {transform: translateX(2px); transition: transform .2s ease-in-out;}
+
+/* Sub-menu on the large screens, i.e. the modal isn't open */
+.wp-block-navigation .wp-block-navigation__responsive-container:not(.has-modal-open) .has-child >.wp-block-navigation__submenu-container {
+    padding: .35em;
+    border-radius: 20px;
+    /* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
+    z-index: 99;
+}
+
+/* Border radius for the nav items in the sub-menu */
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {border-radius: inherit}
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {border-radius: inherit}
+
+/* Spacing for the sub-menu items */
+.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {padding: .35em 1em}
+
+/* Mega Menu */ 
+@media (min-width: 600px)
+{
+    /* Columns */
+    ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
+    ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
+    ul.is-style-icecubo-nav-submenu-mega > li li {display: block !important;}
+    ul.is-style-icecubo-nav-submenu-mega button.wp-block-navigation__submenu-icon {display: none !important;}
+    ul.is-style-icecubo-nav-submenu-mega li > ul {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
+    ul.is-style-icecubo-nav-submenu-mega li > ul {display: inline !important;}
+    ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.wp-block-navigation-submenu {display: grid; grid-column-gap: 2em;}
+    ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu {grid-template-columns: repeat(2, 1fr);}
+    ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm3 {grid-template-columns: repeat(3, 1fr);}
+    ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm4 {grid-template-columns: repeat(4, 1fr);}
+    ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm5 {grid-template-columns: repeat(5, 1fr);}
+
+    /**
+     * Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it.
+     * Using "auto" on the "overflow" property won't work, it creates a horizontal scroll bar.
+     */
+    .wp-block-navigation .wp-block-navigation-item.has-child:hover > .wp-block-navigation__submenu-container.is-style-icecubo-nav-submenu-mega {overflow: hidden;}
+}
