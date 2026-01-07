@@ -1,0 +1,194 @@
+
+/* border-box all the things! */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* break the long text */
+body * {
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Links and inputs transition */
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+    transition: all .2s ease-in-out;
+}
+
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]),
+select,
+textarea,
+.wp-block-search__input {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-size: var(--wp--preset--font-size--extra-small);
+    padding: calc(.667em + 2px);
+    width: 100%;
+}
+
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]):focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.wp-block-search__input:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+    width: auto;
+}
+
+input[type=button],
+input[type=email],
+input[type=search],
+input[type=submit],
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::placeholder {
+    font-size: var(--wp--preset--font-size--small);
+    opacity: 0.6;
+}
+
+/* WP built-in highlighting mark */
+mark {padding: 1px 6px;}
+
+/* Eliminate the horizontal scrollbar when a long text in the preformatted tag is used */
+pre { overflow: auto; }
+
+/* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
+:not(.wp-block-code) > code {
+    background: var(--wp--preset--color--gray-very-light);
+    color: var(--wp--preset--color--darko-down);
+    padding: 3px 8px;
+}
+
+/**
+ * When h element is the first in the group,
+ * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
+ * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' property
+   and to overwrite it, it has to be a target as well.
+ * Otherwise, through theme.jason !important would be used, but the problem is then it cannot be overwritten in UI.
+ * - Alternatively, for the post titles, it could be done in templates, on each post-title block,
+ * but it wouldn't impact the in-content h1 when it's the first element in a group block.
+ * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
+ *
+ * - This potentially could be utilized, along the used declaration, to target the larger heading scope, 
+ * but the problem is that it's impacting the Headings in the Header-Hero sections and is making a large space there,
+ * also it is overriding the block spacing when it's set on the group and Heading element is inside that group.
+ * :where(.is-layout-flow > *,.is-layout-constrained > *) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title) {margin-top: var(--wp--preset--spacing--x-large);}
+ */
+:where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+
+/**
+ * text-decoration in links is important for accessibility. However,
+ * remove the text decoration from the links that are already highlighted
+ */
+body.blog main h2 a,
+body.archive main h2 a,
+body.search main h2 a,
+.wp-block-query .wp-block-post-title a,
+.wp-block-query-pagination a,
+.wp-block-post-terms a,
+.wp-block-post-navigation-link a,
+.remove-text-decor a,
+a.button {
+     text-decoration: none;
+}
+
+/* Boxed page/post template */
+[class*="template-boxed"] main { width: 78%; }
+
+/* Shade bar on links hover */
+a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+
+/* Footer - links */
+footer a:hover { opacity: .6; }
+/* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
+body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-top: 0; }
+
+/* If the last element in the post content is floating, it's necessary to clear the next elm */
+.post-footer, .wp-block-comments, footer {clear: both;}
+
+/**
+ * Blocks
+ */
+
+/**
+ * Logo - remove any background effects on hover (they are actually added on links, but logo is a link as well)
+ */
+ .wp-block-site-logo a:hover, .wp-block-site-title a:hover {background: transparent !important;}
+
+/* Marking a chunk of text with a UI highlighter and adding a following class */
+[class*="ice-mark"] mark {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;text-shadow: none !important;}
+.ice-mark-mix mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.ice-mark-mix-light mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.ice-mark-to-light mark {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
+.ice-mark-focus mark {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
+.ice-mark-pick mark {background: radial-gradient(currentColor, var(--wp--preset--color--darko) 75%)}
+
+/**
+ * Search box - button (icon).
+ * This code, except the 'max-width' is already avaliable in the editor (default by WP).
+ * 'max-width' removes the value set by WP which doesn't give equal space around the icon.
+ */
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+    align-items: center;
+    border-radius: initial;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    border-radius: var(--wp--custom--radius-large);
+    max-width: none;
+}
+
+/* Small screens */
+@media (max-width: 599px) {
+    /* Force behavior on mobile */
+    .mob-force-flexwrap {flex-wrap: wrap !important;}
+    .mob-force-flexdir-columns {flex-direction: column !important;}
+    .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
+    .mob-minheight-no {min-height: unset !important;}
+    .mob-display-out { display: none !important;}
+    
+    /* Narrow layouts */
+    .post-template-single-narrow, .post-template-alike-page-narrow {
+        --wp--style--global--wide-size: min(93%, 1240px);
+        --wp--style--global--content-size: min(83%, 660px);
+    }
+    .post-template-single-narrow .entry-content > *:not(.alignfull):not(.alignwide),
+    .post-template-alike-page-narrow .entry-content > *:not(.alignfull):not(.alignwide) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post-template-single-narrow .entry-content .alignwide,
+    .post-template-alike-page-narrow .entry-content .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .large-display-out { display: none !important;}
+}

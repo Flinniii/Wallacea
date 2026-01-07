@@ -1,0 +1,242 @@
+0000.001 (0) Opened log file at time: Wed, 07 Jan 2026 21:02:58 +0000 on http://wallacea.local
+0000.012 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.9 WP: 6.9 PHP: 8.2.27 (cgi-fcgi, Windows NT MINIFLINNII 10.0 build 26200 (Windows 11) AMD64) MySQL: 8.0.35 (max packet size=1073741824) WPLANG: en_US Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.5M | 4M) multisite: N openssl: OpenSSL 3.0.15 3 Sep 2024 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.017 (0) Free space on disk containing Updraft's temporary directory: 756272 MB
+0000.044 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.056 (0) Semaphore (fd, wp_options) being initialised
+0000.074 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.096 (0) Set semaphore last lock (fd) time to 2026-01-07 21:02:58
+0000.102 (0) Semaphore lock (fd) complete
+0000.124 (0) Backup run: resumption=0, nonce=2629de8d0af0, file_nonce=2629de8d0af0 begun at=1767819778 (0s ago), job type=backup
+0000.137 (0) Scheduling a resumption (1) after 300 seconds (1767820078) in case this run gets aborted
+0000.210 (0) Checking if we have a zip executable available
+0000.225 (0) Creation of backups of directories: beginning
+0000.246 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.201 (0) Total entities for the zip file: 521 directories, 2749 files (0 skipped as non-modified), 41.3 MB
+0002.288 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 27 (27) files added so far); re-opening (prior size: 0 KB)
+0002.713 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 100 files added (on-disk size: 722.4 KB)
+0002.825 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 200 files added (on-disk size: 722.4 KB)
+0002.936 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 300 files added (on-disk size: 722.4 KB)
+0003.047 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 400 files added (on-disk size: 722.4 KB)
+0003.159 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 500 files added (on-disk size: 722.4 KB)
+0003.275 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 600 files added (on-disk size: 722.4 KB)
+0003.384 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 700 files added (on-disk size: 722.4 KB)
+0003.503 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 800 files added (on-disk size: 722.4 KB)
+0003.616 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 900 files added (on-disk size: 722.4 KB)
+0003.723 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1000 files added (on-disk size: 722.4 KB)
+0003.764 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (10 MB, 2749 files batched, 1001 (1028) added so far); re-opening (prior size: 722.4 KB)
+0005.612 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1100 files added (on-disk size: 4976.4 KB)
+0005.718 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1200 files added (on-disk size: 4976.4 KB)
+0005.805 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1300 files added (on-disk size: 4976.4 KB)
+0005.909 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1400 files added (on-disk size: 4976.4 KB)
+0005.989 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1500 files added (on-disk size: 4976.4 KB)
+0006.095 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1600 files added (on-disk size: 4976.4 KB)
+0006.193 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1700 files added (on-disk size: 4976.4 KB)
+0006.299 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1800 files added (on-disk size: 4976.4 KB)
+0006.395 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 1900 files added (on-disk size: 4976.4 KB)
+0006.484 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 2749 files batched, 948 (1976) added so far); re-opening (prior size: 4976.4 KB)
+0012.732 (0) A useful amount of data was added after this amount of zip processing: 7.4 s (normalised: 7.4 s, rate: 3440.4 KB/s)
+0012.799 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2000 files added (on-disk size: 12158.1 KB)
+0012.912 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2100 files added (on-disk size: 12158.1 KB)
+0013.029 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2200 files added (on-disk size: 12158.1 KB)
+0013.144 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2300 files added (on-disk size: 12158.1 KB)
+0013.254 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2400 files added (on-disk size: 12158.1 KB)
+0013.367 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2500 files added (on-disk size: 12158.1 KB)
+0013.472 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2600 files added (on-disk size: 12158.1 KB)
+0013.584 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.tmp: 2700 files added (on-disk size: 12158.1 KB)
+0015.295 (0) Creating zip file manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.list-temp.tmp)
+0015.331 (0) Successfully created zip file manifest (size: 254972)
+0015.663 (0) Created plugins zip (0) - 13886 KB in 15.4 s (901.8 KB/s) (sha1: 09ac31cd32c5b1d44c2324874648efc52a557964, sha256: 57231b442279ae3586e0713cadd1ff323dc79b628a89e48a7355e13ac7b5204b)
+0015.689 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0015.705 (0) No remote despatch: user chose no remote backup service
+0015.712 (0) Recording as successfully uploaded: backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip
+0015.723 (0) Deleting zip manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip.list.tmp)
+0015.736 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0015.741 (0) Number of backup sets in history: 0; groups (db): 1
+0015.748 (0) Number of backup sets in history: 0; groups (files): 1
+0015.753 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0015.790 (0) Beginning creation of dump of themes (split every: 400 MB)
+0016.292 (0) Total entities for the zip file: 96 directories, 848 files (0 skipped as non-modified), 17.1 MB
+0016.408 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0016.513 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0016.625 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0016.733 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0016.848 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0016.953 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0017.056 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0017.160 (0) Zip: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0018.833 (0) Creating zip file manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.list-temp.tmp)
+0018.853 (0) Successfully created zip file manifest (size: 58150)
+0019.176 (0) Created themes zip (0) - 14612.7 KB in 3.4 s (4335.6 KB/s) (sha1: 82e82d44b6b34a43b88c1bb22502cac0f33abea4, sha256: 350310b87d62798ace262ba8019f86a20a6d0310e656f44025f7402a6f817a81)
+0019.199 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0019.205 (0) No remote despatch: user chose no remote backup service
+0019.211 (0) Recording as successfully uploaded: backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip
+0019.223 (0) Deleting zip manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip.list.tmp)
+0019.236 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0019.250 (0) Number of backup sets in history: 0; groups (db): 1
+0019.256 (0) Number of backup sets in history: 0; groups (files): 1
+0019.261 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0019.288 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots,wp-staging
+0019.294 (0) Looking for candidates to backup in: C:\Users\ff190\Local Sites\wallacea\app\public/wp-content/uploads
+0019.301 (0) finding files: 2026: adding to list (1)
+0019.307 (0) finding files: exported_html_files: adding to list (2)
+0019.312 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0019.354 (0) Total entities for the zip file: 10 directories, 34 files (0 skipped as non-modified), 2.2 MB
+0019.675 (0) Creating zip file manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-uploads.zip.list-temp.tmp)
+0019.684 (0) Successfully created zip file manifest (size: 2747)
+0019.744 (0) Created uploads zip (0) - 1484.6 KB in 0.4 s (3555.7 KB/s) (sha1: b546a68cf7786a4f6e5a33a7f9c9522f00fdc5ee, sha256: 590c4df768f83917ba9d46a87b35463cdb208ac77578a216d276381006255f4e)
+0019.765 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0019.770 (0) No remote despatch: user chose no remote backup service
+0019.776 (0) Recording as successfully uploaded: backup_2026-01-07-2102_Wallacea_2629de8d0af0-uploads.zip
+0019.788 (0) Deleting zip manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-uploads.zip.list.tmp)
+0019.800 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0019.807 (0) Number of backup sets in history: 0; groups (db): 1
+0019.814 (0) Number of backup sets in history: 0; groups (files): 1
+0019.820 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0019.846 (0) No backup of mu-plugins: excluded by user's options
+0019.857 (0) Beginning backup of other directories found in the content directory (index: 0)
+0019.862 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0019.867 (0) Looking for candidates to backup in: C:\Users\ff190\Local Sites\wallacea\app\public/wp-content
+0019.873 (0) finding files: backups-dup-lite: skipping: excluded by options (glob)
+0019.877 (0) finding files: index.php: adding to list (1)
+0019.883 (0) finding files: plugins: skipping: this is the plugins directory
+0019.889 (0) finding files: themes: skipping: this is the themes directory
+0019.894 (0) finding files: updraft: skipping: this is the updraft directory
+0019.899 (0) finding files: upgrade: skipping: excluded by options
+0019.903 (0) finding files: uploads: skipping: this is the uploads directory
+0019.919 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0020.019 (0) Creating zip file manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-others.zip.list-temp.tmp)
+0020.037 (0) Successfully created zip file manifest (size: 43)
+0020.069 (0) Created others zip (0) - 0.1 KB in 0.2 s (0.9 KB/s) (sha1: f7a2584358a0c2a342857ab1daf212d9665682a2, sha256: 18df3aeb04df3b8787049d096ce0834aca41b3231b71d792dddbd962a8f2cb27)
+0020.093 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0020.098 (0) No remote despatch: user chose no remote backup service
+0020.103 (0) Recording as successfully uploaded: backup_2026-01-07-2102_Wallacea_2629de8d0af0-others.zip
+0020.115 (0) Deleting zip manifest (backup_2026-01-07-2102_Wallacea_2629de8d0af0-others.zip.list.tmp)
+0020.129 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0020.135 (0) Number of backup sets in history: 0; groups (db): 1
+0020.141 (0) Number of backup sets in history: 0; groups (files): 1
+0020.145 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0020.183 (0) Saving backup status to database (elements: 8)
+0020.196 (0) Beginning creation of database dump (WordPress DB)
+0020.202 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0020.260 (0) Table wp_options: Total expected rows (via COUNT): 239
+0020.266 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.390 (0) Table wp_options: Rows added in this batch (next record: 408): 235 (uncompressed bytes in this segment=1347449) in 0.15 seconds
+0020.424 (0) Table wp_options: finishing file(s) (2, 276.8 KB)
+0020.449 (0) Table wp_users: Total expected rows (via COUNT): 1
+0020.455 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.470 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1411) in 0.03 seconds
+0020.495 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0020.526 (0) Table wp_usermeta: Total expected rows (via COUNT): 20
+0020.533 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.539 (0) Table wp_usermeta: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=2101) in 0.03 seconds
+0020.573 (0) Table wp_usermeta: finishing file(s) (2, 1.1 KB)
+0020.605 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0020.618 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=677) in 0.03 seconds
+0020.647 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0020.671 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0020.677 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.690 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2118) in 0.03 seconds
+0020.716 (0) Table wp_comments: finishing file(s) (2, 0.7 KB)
+0020.738 (0) Table wp_links: Total expected rows (via COUNT): 0
+0020.751 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1298) in 0.02 seconds
+0020.777 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0020.811 (0) Table wp_postmeta: Total expected rows (via COUNT): 34
+0020.817 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.831 (0) Table wp_postmeta: Rows added in this batch (next record: 34): 34 (uncompressed bytes in this segment=4150) in 0.04 seconds
+0020.863 (0) Table wp_postmeta: finishing file(s) (2, 1.4 KB)
+0020.901 (0) Table wp_posts: Total expected rows (via COUNT): 65
+0020.907 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.934 (0) Table wp_posts: Rows added in this batch (next record: 65): 65 (uncompressed bytes in this segment=244456) in 0.05 seconds
+0020.966 (0) Table wp_posts: finishing file(s) (2, 29.8 KB)
+0020.985 (0) Table wp_term_relationships: Total expected rows (approximate): 8
+0020.997 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 10 (uncompressed bytes in this segment=803) in 0.01 seconds
+0021.023 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0021.051 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 5
+0021.057 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0021.069 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1060) in 0.03 seconds
+0021.097 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0021.124 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0021.136 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=650) in 0.02 seconds
+0021.172 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0021.193 (0) Table wp_terms: Total expected rows (via COUNT): 5
+0021.199 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0021.211 (0) Table wp_terms: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=866) in 0.02 seconds
+0021.236 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0021.412 (0) Table wp_duplicator_packages: Total expected rows (via COUNT): 1
+0021.417 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0021.426 (0) Table wp_duplicator_packages: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=18194) in 0.03 seconds
+0021.456 (0) Table wp_duplicator_packages: finishing file(s) (2, 5 KB)
+0021.484 (0) Table wp_export_page_to_html_logs: Total expected rows (via COUNT): 32
+0021.491 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0021.505 (0) Table wp_export_page_to_html_logs: Rows added in this batch (next record: 32): 32 (uncompressed bytes in this segment=5068) in 0.03 seconds
+0021.534 (0) Table wp_export_page_to_html_logs: finishing file(s) (2, 1 KB)
+0021.557 (0) Table wp_export_urls_logs: Total expected rows (via COUNT): 27
+0021.563 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0021.571 (0) Table wp_export_urls_logs: Rows added in this batch (next record: 27): 27 (uncompressed bytes in this segment=7908) in 0.02 seconds
+0021.598 (0) Table wp_export_urls_logs: finishing file(s) (2, 1.2 KB)
+0021.621 (0) Table wp_exportable_urls: Total expected rows (via COUNT): 0
+0021.635 (0) Table wp_exportable_urls: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=816) in 0.02 seconds
+0021.658 (0) Table wp_exportable_urls: finishing file(s) (2, 0.4 KB)
+0021.666 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\Users\ff190\Local Sites\wallacea\app\public/wp-content/updraft/backup_2026-01-07-2102_Wallacea_2629de8d0af0-db.gz (line 1923, C:\Users\ff190\Local Sites\wallacea\app\public\wp-content\plugins\updraftplus\backup.php)
+0021.677 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_options.table.tmpr409.gz (1/16/fopen): adding to final database dump
+0021.699 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_options.table.gz (2/16/fopen): adding to final database dump
+0021.706 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_users.table.tmpr2.gz (3/16/fopen): adding to final database dump
+0021.713 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_users.table.gz (4/16/fopen): adding to final database dump
+0021.719 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_usermeta.table.tmpr21.gz (5/16/fopen): adding to final database dump
+0021.726 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_usermeta.table.gz (6/16/fopen): adding to final database dump
+0021.732 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_commentmeta.table.tmpr0.gz (7/16/fopen): adding to final database dump
+0021.739 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_commentmeta.table.gz (8/16/fopen): adding to final database dump
+0021.745 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_comments.table.tmpr2.gz (9/16/fopen): adding to final database dump
+0021.751 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_comments.table.gz (10/16/fopen): adding to final database dump
+0021.757 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_links.table.tmpr0.gz (11/16/fopen): adding to final database dump
+0021.765 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_links.table.gz (12/16/fopen): adding to final database dump
+0021.772 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_postmeta.table.tmpr35.gz (13/16/fopen): adding to final database dump
+0021.778 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_postmeta.table.gz (14/16/fopen): adding to final database dump
+0021.783 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_posts.table.tmpr66.gz (15/16/fopen): adding to final database dump
+0021.791 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_posts.table.gz (16/16/fopen): adding to final database dump
+0021.796 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_term_relationships.table.tmpr100001.gz (17/16/fopen): adding to final database dump
+0021.804 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_term_relationships.table.gz (18/16/fopen): adding to final database dump
+0021.811 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_term_taxonomy.table.tmpr6.gz (19/16/fopen): adding to final database dump
+0021.818 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_term_taxonomy.table.gz (20/16/fopen): adding to final database dump
+0021.825 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_termmeta.table.tmpr0.gz (21/16/fopen): adding to final database dump
+0021.830 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_termmeta.table.gz (22/16/fopen): adding to final database dump
+0021.836 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_terms.table.tmpr6.gz (23/16/fopen): adding to final database dump
+0021.845 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_terms.table.gz (24/16/fopen): adding to final database dump
+0021.851 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_duplicator_packages.table.tmpr2.gz (25/16/fopen): adding to final database dump
+0021.857 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_duplicator_packages.table.gz (26/16/fopen): adding to final database dump
+0021.864 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_export_page_to_html_logs.table.tmpr33.gz (27/16/fopen): adding to final database dump
+0021.871 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_export_page_to_html_logs.table.gz (28/16/fopen): adding to final database dump
+0021.877 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_export_urls_logs.table.tmpr28.gz (29/16/fopen): adding to final database dump
+0021.884 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_export_urls_logs.table.gz (30/16/fopen): adding to final database dump
+0021.890 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_exportable_urls.table.tmpr0.gz (31/16/fopen): adding to final database dump
+0021.898 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db-table-wp_exportable_urls.table.gz (32/16/fopen): adding to final database dump
+0021.911 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db.gz: finished writing out complete database file (320.8 KB)
+0022.007 (0) Total database tables backed up: 16 (backup_2026-01-07-2102_Wallacea_2629de8d0af0-db.gz, size: 328576, sha1: 77626baabfce2ba98146bcc85c80b67bd3e91d34, sha256: 0fd1fbe43b9f384b57bf98ca1203cad4723163fce09889b2830da960047b0113)
+0022.037 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-plugins.zip: plugins: This file has already been successfully processed
+0022.043 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-themes.zip: themes: This file has already been successfully processed
+0022.048 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-uploads.zip: uploads: This file has already been successfully processed
+0022.053 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-others.zip: others: This file has already been successfully processed
+0022.058 (0) backup_2026-01-07-2102_Wallacea_2629de8d0af0-db.gz: db: This file has not yet been successfully uploaded: will queue
+0022.062 (0) Saving backup history. Total backup size: 29.6 MB
+0022.074 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0022.091 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0022.097 (0) No remote despatch: user chose no remote backup service
+0022.103 (0) Recording as successfully uploaded: backup_2026-01-07-2102_Wallacea_2629de8d0af0-db.gz
+0022.125 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0022.133 (0) Number of backup sets in history: 1; groups (db): 1
+0022.139 (0) Examining (for databases) backup set with group_id=0, nonce=2629de8d0af0, datestamp=1767819778 (Jan 07 2026 21:02:58)
+0022.151 (0) This backup set is the backup set just made, so will not be deleted.
+0022.151 (0) Number of backup sets in history: 1; groups (files): 1
+0022.158 (0) Examining (for files) backup set with nonce=2629de8d0af0, datestamp=1767819778 (Jan 07 2026 21:02:58)
+0022.158 (0) This backup set is the backup set just made, so will not be deleted.
+0022.164 (0) This backup set is the backup set just made, so will not be deleted.
+0022.164 (0) This backup set is the backup set just made, so will not be deleted.
+0022.164 (0) This backup set is the backup set just made, so will not be deleted.
+0022.164 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0022.170 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0022.184 (0) Resume backup (2629de8d0af0, 0): finish run
+0022.199 (0) Decremented the semaphore (fd) by 1
+0022.210 (0) Semaphore (fd) unlocked
+0022.215 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0022.234 (0) No email will/can be sent - the user has not configured an email address.
+0022.240 (0) The backup succeeded and is now complete
